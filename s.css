@@ -1,0 +1,92 @@
+@charset "utf-8";
+.polyhedron, .polyhedron *, .polyhedron *:before {box-sizing: border-box;position: absolute;top: 45%;left: 50%;transform-style: preserve-3d;}
+.polyhedron { animation: ani 15s ease-in infinite;}
+@keyframes ani {to {transform: rotate(360deg) rotateX(0deg) rotateY(180deg);}}
+.polyhedron__comp--shallow-pyramid:nth-child(1) {transform: rotate(180deg) rotateY(0deg) rotateX(-54.73561deg) translateY(-6.53197em);animation: expl-1 16s linear infinite alternate;}
+.polyhedron__comp--shallow-pyramid:nth-child(1) .polyhedron__face--triangle--isosceles:nth-child(1):before {
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(1) .polyhedron__face--triangle--isosceles:nth-child(2):before {
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(1) .polyhedron__face--triangle--isosceles:nth-child(3):before {
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+@keyframes expl-1{
+0%, 20% {transform: rotate(180deg) rotateY(0deg) rotateX(-54.73561deg) translateY(-6.53197em);}
+40% {transform: rotate(180deg) rotateY(0deg) rotateX(-54.73561deg) translateY(-13.06395em);}
+60% {transform: rotate(180deg) rotateY(0deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg);}
+80%, 100% {transform: rotate(180deg) rotateY(0deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg) translateY(-6.53197em);}
+}
+.polyhedron__comp--shallow-pyramid:nth-child(2){transform:  rotateY(0deg) rotateX(-54.73561deg) translateY(-6.53197em);animation: expl-2 16s linear infinite alternate;}
+.polyhedron__comp--shallow-pyramid:nth-child(2) .polyhedron__face--triangle--isosceles:nth-child(1):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(2) .polyhedron__face--triangle--isosceles:nth-child(2):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(2) .polyhedron__face--triangle--isosceles:nth-child(3):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+@keyframes expl-2{
+0%, 20% {transform:  rotateY(0deg) rotateX(-54.73561deg) translateY(-6.53197em);}
+40% {transform:  rotateY(0deg) rotateX(-54.73561deg) translateY(-13.06395em);}
+60% {transform:  rotateY(0deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg);}
+80%, 100% {transform:  rotateY(0deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg) translateY(-6.53197em);}
+}
+.polyhedron__comp--shallow-pyramid:nth-child(3) {transform: rotate(180deg) rotateY(90deg) rotateX(-54.73561deg) translateY(-6.53197em);animation: expl-3 8s linear infinite alternate;}
+.polyhedron__comp--shallow-pyramid:nth-child(3) .polyhedron__face--triangle--isosceles:nth-child(1):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(3) .polyhedron__face--triangle--isosceles:nth-child(2):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(3) .polyhedron__face--triangle--isosceles:nth-child(3):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+@keyframes expl-3{
+0%, 20% {transform: rotate(180deg) rotateY(90deg) rotateX(-54.73561deg) translateY(-6.53197em);}
+40% {transform: rotate(180deg) rotateY(90deg) rotateX(-54.73561deg) translateY(-13.06395em);}
+60% {transform: rotate(180deg) rotateY(90deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg);}
+80%, 100% {transform: rotate(180deg) rotateY(90deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg) translateY(-6.53197em);}
+}
+.polyhedron__comp--shallow-pyramid:nth-child(4) {transform:  rotateY(-90deg) rotateX(-54.73561deg) translateY(-6.53197em);animation: expl-4 8s linear infinite alternate;}
+.polyhedron__comp--shallow-pyramid:nth-child(4) .polyhedron__face--triangle--isosceles:nth-child(1):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(4) .polyhedron__face--triangle--isosceles:nth-child(2):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(4) .polyhedron__face--triangle--isosceles:nth-child(3):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+@keyframes expl-4{
+0%, 20% {transform:  rotateY(-90deg) rotateX(-54.73561deg) translateY(-6.53197em);}
+40% {transform:  rotateY(-90deg) rotateX(-54.73561deg) translateY(-13.06395em);}
+60% {transform:  rotateY(-90deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg);}
+80%, 100% {transform:  rotateY(-90deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg) translateY(-6.53197em);}
+}
+.polyhedron__comp--shallow-pyramid:nth-child(5) {transform: rotate(180deg) rotateY(180deg) rotateX(-54.73561deg) translateY(-6.53197em);animation: expl-5 8s linear infinite alternate;}
+.polyhedron__comp--shallow-pyramid:nth-child(5) .polyhedron__face--triangle--isosceles:nth-child(1):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(5) .polyhedron__face--triangle--isosceles:nth-child(2):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(5) .polyhedron__face--triangle--isosceles:nth-child(3):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+@keyframes expl-5 {
+0%, 20% {transform: rotate(180deg) rotateY(180deg) rotateX(-54.73561deg) translateY(-6.53197em);}
+40% {transform: rotate(180deg) rotateY(180deg) rotateX(-54.73561deg) translateY(-13.06395em);}
+60% {transform: rotate(180deg) rotateY(180deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg);}
+80%, 100% {transform: rotate(180deg) rotateY(180deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg) translateY(-6.53197em);}
+}
+.polyhedron__comp--shallow-pyramid:nth-child(6) {transform:  rotateY(-180deg) rotateX(-54.73561deg) translateY(-6.53197em);animation: expl-6 8s linear infinite alternate;}
+.polyhedron__comp--shallow-pyramid:nth-child(6) .polyhedron__face--triangle--isosceles:nth-child(1):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(6) .polyhedron__face--triangle--isosceles:nth-child(2):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(6) .polyhedron__face--triangle--isosceles:nth-child(3):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+@keyframes expl-6{
+0%, 20% {transform:  rotateY(-180deg) rotateX(-54.73561deg) translateY(-6.53197em);}
+40% {transform:  rotateY(-180deg) rotateX(-54.73561deg) translateY(-13.06395em);}
+60% {transform:  rotateY(-180deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg);}
+80%, 100% {transform:  rotateY(-180deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg) translateY(-6.53197em);}
+}
+.polyhedron__comp--shallow-pyramid:nth-child(7) {transform: rotate(180deg) rotateY(270deg) rotateX(-54.73561deg) translateY(-6.53197em);animation: expl-7 8s linear infinite alternate;}
+.polyhedron__comp--shallow-pyramid:nth-child(7) .polyhedron__face--triangle--isosceles:nth-child(1):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(7) .polyhedron__face--triangle--isosceles:nth-child(2):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(7) .polyhedron__face--triangle--isosceles:nth-child(3):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+@keyframes expl-7{
+0%, 20% {transform: rotate(180deg) rotateY(270deg) rotateX(-54.73561deg) translateY(-6.53197em);}
+40% {transform: rotate(180deg) rotateY(270deg) rotateX(-54.73561deg) translateY(-13.06395em);}
+60% {transform: rotate(180deg) rotateY(270deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg);}
+80%, 100% {transform: rotate(180deg) rotateY(270deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg) translateY(-6.53197em);}
+}
+.polyhedron__comp--shallow-pyramid:nth-child(8){transform:  rotateY(-270deg) rotateX(-54.73561deg) translateY(-6.53197em);animation: expl-8 8s linear infinite alternate;}
+.polyhedron__comp--shallow-pyramid:nth-child(8) .polyhedron__face--triangle--isosceles:nth-child(1):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(8) .polyhedron__face--triangle--isosceles:nth-child(2):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+.polyhedron__comp--shallow-pyramid:nth-child(8) .polyhedron__face--triangle--isosceles:nth-child(3):before {background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));}
+@keyframes expl-8{
+0%, 20% {transform:  rotateY(-270deg) rotateX(-54.73561deg) translateY(-6.53197em);}
+40% {transform:  rotateY(-270deg) rotateX(-54.73561deg) translateY(-13.06395em);}
+60% {transform:  rotateY(-270deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg);}
+80%, 100% {transform:  rotateY(-270deg) rotateX(-54.73561deg) translateY(-13.06395em) rotate(180deg) translateY(-6.53197em);}
+}
+.polyhedron__face--triangle--isosceles {overflow: hidden;border: solid .12em;border-left-color: transparent;border-bottom-color: transparent;margin: -4.68629em;width: 9.37258em;height: 9.37258em;transform: rotate(-31.39971deg) skewX(27.20057deg) scaleY(0.88941);}
+.polyhedron__face--triangle--isosceles:nth-child(1) {transform: rotateY(0deg) translateZ(4.6188em) rotateX(71.06056deg) rotate(-31.39971deg) skewX(27.20057deg) scaleY(0.88941);}
+.polyhedron__face--triangle--isosceles:nth-child(2) {transform: rotateY(120deg) translateZ(4.6188em) rotateX(71.06056deg) rotate(-31.39971deg) skewX(27.20057deg) scaleY(0.88941);}
+.polyhedron__face--triangle--isosceles:nth-child(3) {transform: rotateY(240deg) translateZ(4.6188em) rotateX(71.06056deg) rotate(-31.39971deg) skewX(27.20057deg) scaleY(0.88941);}
+.polyhedron__face--triangle--isosceles:before {border-bottom: solid .12em;margin: -2.44158em -8em;width: 16em;height: 4.88317em;transform: scaleY(1.12434) skewX(-27.20057deg) rotate(31.39971deg) translateY(calc(1px - 50%));content: '';}

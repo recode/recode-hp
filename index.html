@@ -1,0 +1,496 @@
+<!--
+(V)∧_∧(V)やったね!!!!!!!!!!!! 
+ヽ(･ω･)ﾉ 
+--><!DOCTYPE html>
+<html lang="ja"> 
+<head>
+<meta charset="utf-8">
+<title>プログラミングサークル RE:CODE プログラミングコミュニティ</title>
+<meta name="keywords" content="プログラミングサークル,クリエイターコミュニティ,大学生,社会人,プログラミングコミュニティー,オープンソース開発,新宿,みんなおっけいだよ！">
+<meta name="description" content="デザイン・作曲。プログラミングサークル/クリエイターコミュニティ。サービス開発中！どこでも誰でも募集してます！気軽にどうぞ！プログラミングコミュニティ。現在はクリエイターが最大のUXを味わえる場を目指してます。">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta property="og:url" content="http://hukumoto.pe-gawa.com/club/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RE:CODE:生産をする場所！好きなクリエイターを集めて活動し合う場所だよ！" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://hukumoto.pe-gawa.com/club/img/recode_2_1.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@recodebusiness" />
+<meta name="twitter:title" content="RE:CODE" />
+<meta name="twitter:url" content="http://hukumoto.pe-gawa.com/club/" />
+<meta name="twitter:description" content="生産をする場所！好きなクリエイターを集めて活動し合う場所だよ！" />
+<meta name="twitter:image:src" content="http://hukumoto.pe-gawa.com/club/img/recode_2_1.png" />
+
+<link href="img/fv.png" rel="shortcut icon" type="image/x-icon">
+<link rel="stylesheet" href="d.css?id=2"><link rel="stylesheet" href="s.css">
+<script src="./jquery.min.js"></script><script src="js/m.js"></script>
+<link rel="stylesheet" href="f4-6/css/font-awesome.min.css"/>
+<!-- <link rel="stylesheet" type="text/css" media="all" href="cri/common.css"><script src="cri/snow.js"></script><script src="cri/common.js"></script> -->
+<script type="text/javascript">
+$(document).ready(function(){
+w_h=window.innerHeight-0;
+if(w_h < 400){w_h=400;}else if(w_h>900){w_h=900;}
+$(".black_area").css({height:w_h+"px"});
+$(".top_contact").animate({
+"width":"120px","height":"120px","marginLeft":"-=60px","marginTop":"-=60px","font-size":"18px"
+},500).animate({
+"width":"-=10px","height":"-=10px","marginLeft":"+=5px","marginTop":"+=5px","font-size":"17px"
+},200).animate({
+"width":"+=10px","height":"+=10px","marginLeft":"-=5px","marginTop":"-=5px","font-size":"18px"
+},200).animate({
+"width":"-=2px","height":"-=2px","marginLeft":"+=1px","marginTop":"+=1px","font-size":"17px"
+},100).animate({
+"width":"+=2px","height":"+=2px","marginLeft":"-=1px","marginTop":"-=1px","font-size":"18px"
+},100);
+$(".top_contact").hover(function(){
+$(".top_contact").css("opacity","0.9");
+$(".top_contact").css("background","-webkit-linear-gradient(#44c7ff 0%, #598eff 100%)");
+$(".top_contact").css("color","#fff");
+},function(){
+$(".top_contact").css("opacity","1");
+$(".top_contact").css("background","#fff");
+$(".top_contact").css("color","#041d3a");
+});
+$(".top_contact").click(function(){$("body").animate({scrollTop: ( ($(".join_slack_area_title").offset().top)-450 )}, 400);});
+var h_sw=1;
+$(window).scroll(function (){
+var s = $(this).scrollTop();
+if(s > 250){
+  h_sw=0;$(".h_2").hide();$(".h_1").fadeIn();
+}else if(h_sw==0){
+  h_sw=1;$(".h_2").show();$(".h_1").fadeOut();
+}
+});
+$(".modal_on").click(function(){$(".modal_area_back").show();$(".modal_area").show();});
+$(".modal_area_back").click(function(){$(".modal_area_back").hide();$(".modal_area").hide();});
+$(".join_slack_area_left").hover(function(){
+$(this).children(".join_slack_area_comment").children(".join_slack_area_slackicon").css("color","#3e4346");
+$(".join_slack_area_circle2").html("<i class='fa fa-wrench'></i>");
+$(".join_slack_area_circle2").css("font-size","30px");
+$(".modal_area_main_title").text("クリエイターの仲間を見つける");
+$(".modal_area_main_subtitle").text("問題やアイデアを共有して、高速でものを作るためのコミュニティです。");
+$(".modal_form_text").attr("placeholder","例）サービス作りたい。アートと技術を混ぜたことをしたい。MVPで高速でPDCAまわして開発したい！ アプリを作りたくて定期的に発作がでて仕方がない。など");
+$(this).children(".join_slack_area_title").css("text-decoration","underline");
+$(".modal_form_type").val("1");
+
+$(this).children(".join_slack_area_circle_backarea").children(".join_slack_area_circle_back").children(".join_slack_area_circle").animate({
+"marginTop":"-=2.5px","marginLeft":"-=2.5px","width":"+=5px","height":"+=5px","line-height":"+=5px","font-size":"+=5px"
+},200).animate({
+"marginTop":"+=2.5px","marginLeft":"+=2.5px","width":"-=5px","height":"-=5px","line-height":"-=5px","font-size":"-=5px"
+},100).animate({
+"marginTop":"-=1px","marginLeft":"-=1px","width":"+=2px","height":"+=2px","line-height":"+=2px","font-size":"+=2px"
+},100).animate({
+"marginTop":"+=1px","marginLeft":"+=1px","width":"-=2px","height":"-=2px","line-height":"-=2px","font-size":"-=2px"
+},100);
+},function(){	
+  $(this).children(".join_slack_area_comment").children(".join_slack_area_slackicon").css("color","#8c979d");
+  $(this).children(".join_slack_area_title").css("text-decoration","none");
+});
+
+$(".modal_submit_btn").click(function(){
+can_show_modal=0;
+if($(".modal_form_mail").val() == ""){can_show_modal=1;alert("メールアドレスが入力されていません。");}
+if($(".modal_form_name").val() == ""){can_show_modal=1;alert("名前が入力されていません。");}
+if($(".modal_form_text").val() == ""){can_show_modal=1;alert("目的が入力されていません。");}
+if(can_show_modal == 0){
+$(".modal_loading").show();
+$.ajax({
+url: 'cgi/ajax_mail.html',
+type: 'POST',
+data: "mail="+$(".modal_form_mail").val()+"&name="+$(".modal_form_name").val()+"&text="+$(".modal_form_text").val()+"&type="+$(".modal_form_type").val(),
+success: function(data) {
+upload = JSON.parse(data);
+$(".modal_loading").hide();
+if(data == 1){
+  alert($(".modal_form_name").val()+"さん、ご連絡ありがとうございました。内容確認の後slackにも招待致します。");
+  $(".modal_area_back").hide();
+  $(".modal_area").hide();
+}else{
+  alert("入力に間違えがあります。");
+}
+}
+});
+}
+});
+
+$(".join_slack_area_right").hover(function(){
+$(this).children(".join_slack_area_comment").children(".join_slack_area_slackicon").css("color","#3e4346");
+$(".join_slack_area_circle2").html("<i class='fa fa-github'></i>");
+$(".join_slack_area_circle2").css("font-size","43px");
+$(".modal_area_main_title").text("オープンソースの開発をする");
+$(".modal_area_main_subtitle").text("できたばかりのコミュニティです！入ったらまずは気軽にコメントしてみて下さい^^)/");
+$(".modal_form_text").attr("placeholder","例）ディープラーニングやOpenCVを使ったコードやアプリなどをオープンソースで開発がしたい。など。ReactJS・Scala・Railsをやりたいなど。");
+$(this).children(".join_slack_area_title").css("text-decoration","underline");
+$(".modal_form_type").val("2");
+	
+$(this).children(".join_slack_area_circle_backarea").children(".join_slack_area_circle_back").children(".join_slack_area_circle").animate({
+"marginTop":"-=2.5px","marginLeft":"-=2.5px","width":"+=5px","height":"+=5px","line-height":"+=5px","font-size":"+=5px"
+},200).animate({
+"marginTop":"+=2.5px","marginLeft":"+=2.5px","width":"-=5px","height":"-=5px","line-height":"-=5px","font-size":"-=5px"
+},100).animate({
+"marginTop":"-=1px","marginLeft":"-=1px","width":"+=2px","height":"+=2px","line-height":"+=2px","font-size":"+=2px"
+},100).animate({
+"marginTop":"+=1px","marginLeft":"+=1px","width":"-=2px","height":"-=2px","line-height":"-=2px","font-size":"-=2px"
+},100);
+},function(){
+$(this).children(".join_slack_area_comment").children(".join_slack_area_slackicon").css("color","#8c979d");
+$(this).children(".join_slack_area_title").css("text-decoration","none");
+});
+});
+</script>
+</head>
+<body>
+<div id="side_menu">
+<div class="side_menu_in">
+<a href="//recode-create.slack.com/" target="_blank">Slack : クリエイター</a>
+<a href="//recode-study.slack.com/" target="_blank">Slack : 勉強会/研究</a>
+</div>
+<a href="coporate.html">協力団体一覧😋</a>
+<a href="//hukumoto.pe-gawa.com/club/movie/">ナオキングVIDEO</a>
+<a href="all_page.html">過去のトップページ一覧</a>
+<a href="//recode.tokyo/">RE:CODEブログ</a>
+<a href="//hukumoto.pe-gawa.com/club/gallery/">デザイン一覧</a>
+<a href="https://dribbble.com/recode">dribbbleのチームもやってます！</a>
+</div>
+<div id="page">
+<div class="modal_loading"><img src="img/loading.gif" class="loading_img" alt="loading"></div>
+<div class="modal_area">
+<div class="modal_area_back"></div>
+<div class="modal_area_main_back">
+<div class="modal_area_main">
+<div class="modal_area_in">
+<div class="join_slack_area_circle2"></div>
+<p class="modal_area_main_title"></p>
+<div class="modal_area_main_subtitle_back">
+	<p class="modal_area_main_subtitle"></p>
+	<p>メールアドレスと名前と目的を入力したら、確認の後<a href="./slack.html" target="_blank" style="color:#4ea277;"><i class="fa fa-slack"></i>slack</a>に招待されます！</p>
+</div>k
+<input type="text" class="modal_form_name" placeholder="氏名(ニックネームも可)" autofocus>
+<input type="email" class="modal_form_mail" placeholder="メールアドレス">
+<input type="hidden" class="modal_form_type" value="">
+<textarea class="modal_form_text" placeholder=""></textarea>
+<p>現在サイト移行中のため停止しています。</p>
+<div class="modal_submit_btn">この内容で参加する</div>
+</div>
+</div>
+</div>
+</div>
+<header class="h_1" id="header">
+<div class="h_1_in">
+<div class="menu-trigger">
+<span class="m_b_1" style="background: #000;"></span><span class="m_b_2" style="background: #000;"></span><span class="m_b_3" style="background: #000;"></span>
+</div>		
+</div>
+<a href="./"><h1 class="h_1_title">RE:CODE</h1></a>
+<div class="h_1_menu">
+<a href="we.html" style=''>LOCATION</a><a href="community.html" style='margin-left:20px;'>COMMUNITY</a><a href="answer.html" style='margin-left:20px;'>SOCIAL😊</a><a href="contact.html" style='margin-left:20px;'>CONTACT</a>
+</div>
+<div class="clear-fix"></div>
+</header>
+<header class="h_2">
+<div class="under-menu-in-area">
+<div class="menu-trigger">
+<span class="m_b_1"></span><span class="m_b_2"></span><span class="m_b_3"></span>
+</div>	
+</div>
+<a href="./"><h1 class="h_2_title">RE:CODE</h1></a>
+<div class="h_2_menu">
+<a href="we.html" style=''>LOCATION</a><a href="community.html" style='margin-left:20px;'>COMMUNITY</a><a href="answer.html" style='margin-left:20px;'>SOCIAL😊</a><a href="contact.html" style='margin-left:20px;'>CONTACT</a>
+</div>
+</header>
+<div class="abs_back">
+<div class="polyhedron_area">
+<div class="polyhedron_area_in">
+<div class='polyhedron polyhedron--triakis-octahedron'>
+<div class='polyhedron__comp polyhedron__comp--shallow-pyramid'>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+</div>
+<div class='polyhedron__comp polyhedron__comp--shallow-pyramid'>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+</div>
+<div class='polyhedron__comp polyhedron__comp--shallow-pyramid'>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+</div>
+<div class='polyhedron__comp polyhedron__comp--shallow-pyramid'>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+</div>
+<div class='polyhedron__comp polyhedron__comp--shallow-pyramid'>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+</div>
+<div class='polyhedron__comp polyhedron__comp--shallow-pyramid'>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+</div>
+<div class='polyhedron__comp polyhedron__comp--shallow-pyramid'>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+</div>
+<div class='polyhedron__comp polyhedron__comp--shallow-pyramid'>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+<div class='polyhedron__face polyhedron__face--triangle--isosceles'></div>
+</div>
+</div>
+</div>
+</div>
+<div class="polyhedron_area_white"></div>
+</div>
+<div class="black_area" >
+<video autoplay muted loop class="main-video-area"><source src="videos/b.mov"></video>
+<div class="video_area_back"></div>
+<div style="position: absolute;width: 100%;font-weight: bold;z-index: 11;">
+  <div id="snow-area" class="top_main_area">
+    <p class="top_title">CREATE &amp;<br>COLLABORATION</p>
+    <p class="top_subtitle"><a href="https://ferret-plus.com/7982" target="_blank" style="color: #bfefff">slack</a>で様々な作ったものを共有や協力する場所</p>
+    <p class="top_sumahotitle"><a href="https://ferret-plus.com/7982" target="_blank">slack</a>で様々な作ったものを共有や協力する場所</p>
+    <div class="top_contact_area">
+    <div class="top_contact"><div style="padding-top:40px;">参加する<br><i class="fa fa-chevron-down"></i></div></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="contents1-area">
+<div class="contents1-area-in">
+<div style="font-size:30px;">
+	<h2 class="contents1-title">プログラミングコミュニティ</h2>
+	<p style="color:#26343c;font-size:16px;">
+	協力してものを作るための<a href="//slack.com" target="_blank">Slack</a>ベースのコミュニティです！<br>下の参加ボタンから気軽に参加できます！🙂<br>運営などはいません。全て高性能なAIが管理してます！<br>ユーザ自ら好きなクリエイターを集めて活動し合う場所です！
+	</p>
+	<div class="join_slack_area">
+		<div class="join_slack_area_left modal_on" style="width:100%;float:left;">
+			<div class="join_slack_area_circle_backarea">
+			<div class="join_slack_area_circle_back">
+				<div class="join_slack_area_circle">
+					<i class="fa fa-wrench"></i>
+				</div>
+			</div>
+			</div>
+			<h3 class="join_slack_area_title">クリエイターの仲間を見つける!</h3>
+			<div class="join_slack_area_comment">様々な人とものを協力して作るための<br>クリエイターコミュニティ<div class="join_slack_area_slackicon"><i class="fa fa-slack"></i> slackに参加</div></div>
+		</div>
+		<div class="clear-fix"></div>
+	</div>
+</div>
+</div>
+
+<div class="act_area" style="padding-bottom: 60px;">
+	<p class="contents_title" style="margin:60px auto 60px;">Activity</p>
+	<div class="c1" style="text-align:center;">
+  <a class="twitter-timeline" data-dnt="true"  href="//twitter.com/recodebusiness" data-widget-id="667742963791859712">@ReCodeさんのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+</div>
+
+<div style="background: #fff;">
+<div class="sys_area">
+<p class="contents_title" style="padding-bottom: 20px;color:#218ce9;">Creation</p>
+<div class="p_area" style="margin-left:0px;">
+	<a href="//team.proport.me/" target="_blank" class="p_area_img" style="background-image: url('img_p/i11.jpg');"></a>
+	<a href="//team.proport.me/" target="_blank" class="p_area_title">team.proport.me</a>
+	<p class="p_area_sub_title">Proportのチーム！</p>
+</div>
+<div class="p_area">
+	<a href="//kijimite.com" target="_blank" class="p_area_img" style="background-image: url('img_p/i9.jpg');"></a>
+	<a href="//kijimite.com" target="_blank" class="p_area_title">Kijimite</a>
+	<p class="p_area_sub_title">記事投稿系サービス(現在再考中)</p>
+</div>
+<div class="p_area">
+	<a href="//github.com/bokotomo/photo-message-ai" class="p_area_img" style="background-image: url('img_p/5258966893023.LINE.jpg');background-size: cover;"></a>
+	<a href="//github.com/bokotomo/photo-message-ai" class="p_area_title">Aki LineBot</a>
+	<p class="p_area_sub_title">画像関係を全てやってくれるチャットボットAIです。
+	</p>
+</div>
+<div class="p_area">
+	<a href="//hukumoto.pe-gawa.com/club/club6/we.rb?id=0" class="p_area_img" style="background-image: url('img_p/i3.png');"></a>
+	<a href="//hukumoto.pe-gawa.com/club/club6/we.rb?id=0" class="p_area_title">ひげコレクション(iOS)</a>
+	<p class="p_area_sub_title">ハッカソンの時に作成したひげコレクションアプリ!!!</p>
+</div>
+<div class="p_area" style="margin-left:0px;">
+	<a href="//baseshare.jp" target="_blank" class="p_area_img" style="background-image: url('img_p/i4.jpg');"></a>
+	<a href="//baseshare.jp" target="_blank" class="p_area_title">BaseShare</a>
+	<p class="p_area_sub_title">コンテンツN次創作プラットフォーム。</p>
+</div>
+<div class="p_area">
+	<a href="electronics.html" class="p_area_img" style="background-image: url('img_p/densi2.jpg');background-size:cover;"></a>
+	<a href="electronics.html" class="p_area_title">電子工作一覧</a>
+	<p class="p_area_sub_title">電子工作の一覧。IoTなどもやりたい。</p>
+</div>
+<div class="p_area">
+	<a href="//hukumoto.pe-gawa.com/club/club6/we.rb?id=1" class="p_area_img" style="background-image: url('img_p/i2.png');"></a>
+	<a href="//hukumoto.pe-gawa.com/club/club6/we.rb?id=1" class="p_area_title">Unity系一覧</a>
+	<p class="p_area_sub_title">Unity系一覧｡360度カメラも持ってるので組み合わせてみたいです。</p>
+</div>
+
+<div class="p_area">
+	<a href="//proport.me/" target="_blank" class="p_area_img" style="background-image: url('img_p/propdesign.png');background-size: cover;"></a>
+	<a href="//proport.me/" target="_blank" class="p_area_title">ProPort</a>
+	<p class="p_area_sub_title">人を巻き込む・巻き込まれるためのポートフォリオ</p>
+</div>
+
+<div class="clear-fix"></div>
+
+<p class="contents_title" style="margin-top: 10px;padding-bottom: 20px;color:#e82171;">OpenSorce</p>
+<div class="p_area" style="margin-left:0px;">
+	<a href="//github.com/bokotomo/PhotoMessageAI" target="_blank" class="p_area_img" style="background-image: url('img_p/5258966893023.LINE.jpg');background-size: cover;"></a>
+	<a href="//github.com/bokotomo/PhotoMessageAI" target="_blank" class="p_area_title">Aki LineBot</a>
+	<p class="p_area_sub_title">画像関係を全てやってくれるチャットボットAIです！</p>
+</div>
+<div class="p_area">
+	<a href="//github.com/bokotomo/SimpleMessagesViewController" target="_blank" class="p_area_img" style="background-image: url('img_p/simpeledesignmessage2.png');background-size: cover;"></a>
+	<a href="//github.com/bokotomo/SimpleMessagesViewController" target="_blank" class="p_area_title">SimpleIOSMessagesUI</a>
+	<p class="p_area_sub_title">iOSのシンプルでデザインも良いメッセージページライブラリ</p>
+</div>
+<div class="p_area">
+	<a href="//github.com/bokotomo/GitHubProfile" target="_blank" class="p_area_img" style="background-image: url('img_p/githubpro.png');background-size: cover;"></a>
+	<a href="//github.com/bokotomo/GitHubProfile" target="_blank" class="p_area_title">GitHubProfile</a>
+	<p class="p_area_sub_title">GitHubのレポジトリをWebページに貼れるようにするコード</p>
+</div>
+<div class="p_area">
+	<a href="//github.com/bokotomo/WebMdParser" target="_blank" class="p_area_img" style="background-image: url('img_p/pBeeJQDQ.png');background-size: cover;"></a>
+	<a href="//github.com/bokotomo/WebMdParser" target="_blank" class="p_area_title">WebMdParser</a>
+	<p class="p_area_sub_title">.mdファイルをwebでも整形された形で見れるコード</p>
+</div>
+<div class="clear-fix"></div>
+
+<div class="p_area" style="margin-left:0px;">
+	<a href="//github.com/bokotomo/HttpTester" target="_blank" class="p_area_img" style="background-image: url('img_p/httptester_MainPageConfilm2.jpg');background-size: cover;"></a>
+	<a href="//github.com/bokotomo/HttpTester" target="_blank" class="p_area_title">HttpTester</a>
+	<p class="p_area_sub_title">Httpリクエストを送ってテストするためのツール</p>
+</div>
+
+
+<div class="p_area">
+	<a href="//github.com/ProPort/proport-master" target="_blank" class="p_area_img" style="background-image: url('img_p/propdesign.png');background-size: cover;"></a>
+	<a href="//github.com/ProPort/proport-master" target="_blank" class="p_area_title">ProPort-GitHub</a>
+	<p class="p_area_sub_title">ProPortのGitHub。人を巻き込む・巻き込まれるためのポートフォリオ</p>
+</div>
+
+<div class="p_area">
+	<a class="p_area_img" style="background-image: url('img_p/i8.png');"></a>
+	<a class="p_area_title">さらに作っていきます！</a>
+	<p class="p_area_sub_title">トップページもリニューアルしたので、どんどん他の方も作ります！！</p>
+</div>
+<div class="clear-fix"></div>
+
+<p style="text-align: center;padding: 40px 0px 20px 0px;"><a href="systems.html" style='font-weight:bold;color:#333;font-size:20px;'>もうちょっと見る <i class="fa fa-arrow-right"></i></a></p>
+</div>
+</div>
+
+<div class='member'>
+<p class="contents_title" style="margin-top:40px;">Member</p>
+<div style="padding:20px 0px;">
+<h3><i class="fa fa-cubes"></i> プログラマ</h3>
+<div class="member_program member_tag">
+<p>gaku</p><p>ash</p><p>ohayo</p><p>isobe</p><p>ryuyan</p><p>yano</p><p>aya</p><p>kohei</p><p>kanai</p><p>kawato</p><p>kenken</p><p>inclac</p><p>kahiro</p><p>taichi</p><p>kariya</p><p>atsuki</p><p>takanori</p><p>kanno</p><p>shimada</p><p>tashiro</p><p>akira</p><p>etc</p>
+<div class="clear-fix"></div>
+</div>
+<h3><i class="fa fa-plug"></i> 電子工作</h3>
+<div class="member_ele member_tag">
+<p>ibuki</p><p>iwa</p><p>shinya</p><p>takashiro</p><p>gaku</p><p>atsuki</p><p>kariya</p><p>saito</p><p>kobayashi</p>
+<div class="clear-fix"></div>
+</div>
+<h3><i class="fa fa-child"></i> プランナー</h3>
+<div class="member_plan member_tag">
+<p>hayato</p>
+<p>山口翔(広報)</p>
+<a href="https://twitter.com/Syo_pr" style="width: 100px;height: 100px;border-radius: 100px;background-image: url('img_p/yamagu.jpg');background-size: cover;margin: auto;background-position-x: 20%;display: block;box-shadow: 0px 0px 1px 1px #8e8e8e;" target="_blank"></a>
+<div class="clear-fix"></div>
+</div>
+<h3><i class="fa fa-university"></i> デザイナー</h3>
+<div class="member_design member_tag">
+<p>hayato</p><p>tomo</p><p>kento</p>
+<div class="clear-fix"></div>
+</div>
+<h3><i class="fa fa-eye"></i> プロダクトデザイナー</h3>
+<div class="member_product_design member_tag">
+<p>satuki</p>
+<div class="clear-fix"></div>
+</div>
+<h3><i class="fa fa-video-camera"></i> 映像</h3>
+<div class="member_video member_tag">
+<a href="movie/"><p>ナオキング</p></a>
+<div class="clear-fix"></div>
+</div>
+<h3><i class="fa fa-music"></i> 音楽</h3>
+<div class="member_music member_tag">
+<p>tomo</p>
+<div class="clear-fix"></div>
+</div>
+<h3><i class="fa fa-bicycle"></i> スポーツマン</h3>
+<div class="member_market member_tag">
+<p>wanted</p>
+<div class="clear-fix"></div>
+</div>
+</div>
+</div>
+
+<div style="padding:120px 20px;background: #fff;">
+<p class="contents_title"><i class="fa fa-paper-plane"></i> Hackathon</p>
+<div style="text-align: center;padding-top: 10px;">
+<p>常にハッカソンのお誘いを募集しています。<br>他のプログラミングサークルやコミュニティからの募集があれば参加したいです。</p>
+<a href="hackathon/" class="hackathon-button">ハッカソンを申請する</a>
+</div>
+</div>
+
+<div class="media_area">
+  <p class="contents_title">Media</p>
+  <div style="padding-top: 60px;">
+    <div class="media_area_in">
+  		<iframe style="width:100%;box-sizing: border-box;" src="//www.youtube.com/embed/HHvjURLNBkQ" frameborder="0" allowfullscreen></iframe>
+  		<div class="media_area_contents-title"><a href="./movie/detail.html?id=35"><h2 style="font-size:16px;">岡山 西川緑道公園 期間限定イルミネーション 【Lumix DMC-GH4H】４K動画</h2></a>
+  			<p style="color:dimgray;font-size:13px;padding-top:5px;">
+  			岡山駅近くの西川緑道公園にて、2016/11/18 ～ 01/15までの期間限定で、約85000球のLEDイルミネーションを見ることが出来ます。綺麗だったので撮影してみました。
+  			</p>
+  		</div>
+	  </div>
+		<div class="clear-fix"></div>
+  </div>
+</div>
+
+<div class="commu-area-out">
+  <div class="commu-area">
+    <div class="commu-area-title">Communication</div>
+    <div class="commu-area-subtitle">Slack and GitHub</div>
+    <div class="commu-area-text">
+      Conversation and Communication are done with <a href="//slack.com">Slack</a>.<br>
+      Open source development is done with each participant account in <a href="//github.com">GitHub</a>.<br>
+      会話や交流は<a href="//slack.com">Slack</a>で行います！<br>
+      オープンソース開発は<a href="//github.com">GitHub</a>で各参加者のアカウントで行います！！！<br>
+    </div>
+  </div>
+  <div style="padding-top:60px;z-index:1;">
+  </div>
+</div>
+<div class="contents-fb-area">
+<p class="contents_title" style="padding-bottom:40px;color:#fff;"><i class="fa fa-instagram"></i> Instagram</p>
+<div class="fb_area"><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="//www.instagram.com/p/BDZ6sWNo1Vj/" class="insta-title" target="_blank">ラズベリーパイ新宿 #7セグメントLED</a></p> <p class="insta-title">re:codeさん(@recode_tokyo)が投稿した写真 - <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-03-26T05:44:18+00:00">2016 3月 25 10:44午後 PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+</div>
+<div style="background:#fff;padding-bottom:60px;">
+<p class="contents_title" style="padding-bottom:60px;padding-top: 60px;"><i class="fa fa-facebook-square"></i> facebook</p>
+<div class="fb_area"><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=1437576039824101";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-page" data-href="https://www.facebook.com/RECODE-718921151501787/" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+</div>
+</div>
+<footer id="footer"><div id="copy"><i class="fa fa-copyright"></i> 💕2018 RE:CODE. in 新宿 プログラミングコミュニティ</div></footer></div></div></body></html>
